@@ -9,14 +9,11 @@
 <body>
     <div class="container">
         <h1>💡 Frases Motivacionais</h1>
-        <div class="quote-box">
-            <p id="quote">Carregando frase...</p>
-        </div>
-        <button onclick="novaFrase()">Nova Frase</button>
-        
-        <div class="share-buttons">
-            <button class="facebook" onclick="compartilharFacebook()">Compartilhar no Facebook</button>
-            <button class="whatsapp" onclick="compartilharWhatsApp()">Compartilhar no WhatsApp</button>
+        <p id="frase">Carregando frase...</p>
+        <button onclick="carregarFrase()">Nova frase</button>
+        <div class="botoes">
+            <a id="facebook" target="_blank">Compartilhar no Facebook</a>
+            <a id="whatsapp" target="_blank">Compartilhar no WhatsApp</a>
         </div>
     </div>
     <script src="script.js"></script>
