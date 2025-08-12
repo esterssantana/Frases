@@ -12,7 +12,12 @@ const frases = [
 function carregarFrase() {
   const frase = frases[Math.floor(Math.random() * frases.length)];
   document.getElementById("frase").textContent = frase;
+
+  // Links de compartilhamento
+  document.getElementById("facebook").href =
+    https://www.facebook.com/sharer/sharer.php?u=&quote=${encodeURIComponent(frase)};
+  document.getElementById("whatsapp").href =
+    https://api.whatsapp.com/send?text=${encodeURIComponent(frase)};
 }
 
-// Carrega uma frase ao abrir a página
 window.onload = carregarFrase;
